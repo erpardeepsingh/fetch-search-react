@@ -27,6 +27,11 @@ code {
 .card{ 
   background-color: white;
   border-radius: 8px;
+  transition: transform .2s;
+}
+.card:hover{
+  cursor: pointer;
+  transform: scale(1.1);
 }
 .title{
   font-size: 15px;
@@ -38,7 +43,7 @@ code {
   border-radius: 8px;
   padding: 11px;
   width: 60vw;
-  margin: 50px;
+  margin: 20px 100px;
   border: 2px solid white;
   background-color: blue;
   color: white;
@@ -48,4 +53,17 @@ code {
 ::placeholder {
   color: white;
   opacity: 1; /* Firefox */
+}
+header{
+  position: sticky;
+  top: 0;
+  background-color: blue;
+}
+input:focus{
+border: 2px solid white;
+outline: none !important;
+}
+a{
+  text-decoration: none;
+  color: inherit;
 }
